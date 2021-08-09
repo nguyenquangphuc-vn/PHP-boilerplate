@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "css:build": "sass node_modules/bootstrap/scss/bootstrap.scss assets/css/style.css",
+    "css:build": "sass node_modules/bootstrap/scss/bootstrap.scss assets/css/bootstrap.css",
     "lint:fix": "prettier --write ."
   },
   "repository": {

@@ -10,9 +10,9 @@ class MySQLConnection
         if (!isset(self::$instance)) {
             try {
                 $mysql_host= "localhost";
-                $mysql_dbname="";
-                $mysql_username="root";
-                $mysql_password="";
+                $mysql_dbname="student_management";
+                $mysql_username="admin";
+                $mysql_password="12345";
                 self::$instance = new PDO('mysql:host='.$mysql_host.';dbname='.$mysql_dbname, $mysql_username, $mysql_password);
                 self::$instance->exec("SET NAMES 'utf8'");
             } catch (PDOException $ex) {
