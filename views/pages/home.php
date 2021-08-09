@@ -1,5 +1,12 @@
 
+<!--Header-->
 <?php
-# views/pages/home.php
-echo "Tên tôi là: $name, năm nay tôi $age tuổi";
+require_once('views/layouts/header.php');
+?>
+
+<div>Toi la Bean</div>
+
+<!-- footer -->
+<?php
+require_once('views/layouts/footer.php');
 ?>
