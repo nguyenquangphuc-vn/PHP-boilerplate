@@ -1,0 +1,27 @@
+{
+  "name": "phpsample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "css:build": "sass node_modules/bootstrap/scss/bootstrap.scss assets/css/style.css",
+    "lint:fix": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nguyenquangphuc-vn/PHPSample.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nguyenquangphuc-vn/PHPSample/issues"
+  },
+  "homepage": "https://github.com/nguyenquangphuc-vn/PHPSample#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.0",
+    "sass": "^1.37.5"
+  },
+  "devDependencies": {
+    "prettier": "^2.3.2"
+  }
+}
