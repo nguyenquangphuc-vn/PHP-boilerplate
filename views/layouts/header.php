@@ -1,30 +1,55 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-          Brand
+<header class="p-3 bg-primary text-light">
+  <div class="container">
+    <div
+      class="
+        d-flex
+        flex-wrap
+        align-items-center
+        justify-content-center justify-content-lg-start
+      "
+    >
+      <a
+        href="/"
+        class="
+          d-flex
+          align-items-center
+          mb-2 mb-lg-0
+          text-white text-decoration-none
+        "
+      >
+        <i class="fab fa-php h1 me-4"></i>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarColor02">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-light" type="submit">Search</button>
-        </form>
+
+      <ul
+        class="
+          nav
+          col-12 col-lg-auto
+          me-lg-auto
+          mb-2
+          justify-content-center
+          mb-md-0
+        "
+      >
+        <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
+        <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+        <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+        <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+        <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+      </ul>
+
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+        <input
+          type="search"
+          class="form-control form-control-dark"
+          placeholder="Search..."
+          aria-label="Search"
+        />
+      </form>
+
+      <div class="text-end">
+        <button type="button" class="btn btn-outline-light me-2">Login</button>
+        <button type="button" class="btn btn-warning">Sign-up</button>
       </div>
     </div>
-  </nav>
+  </div>
+</header>
