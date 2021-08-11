@@ -1,6 +1,7 @@
 <?php
 # components_controller
-require_once('controllers/base_controller.php');
+namespace app\controllers;
+
 class LayoutsController extends BaseController
 {
 

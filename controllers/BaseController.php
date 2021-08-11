@@ -1,5 +1,6 @@
 <?php
-# controllers/base_controller.php
+namespace app\controllers;
+
 class BaseController
 {
     protected $folder;

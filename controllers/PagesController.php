@@ -1,8 +1,10 @@
-
 <?php
-# controllers/pages_controller.php
-require_once('controllers/base_controller.php');
-require_once ('controllers/layouts_controller.php');
+
+namespace app\controllers;
+
+use app\models\Product;
+
+$product = new Product();
 
 class PagesController extends BaseController
 {

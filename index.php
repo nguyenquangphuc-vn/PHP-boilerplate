@@ -1,7 +1,8 @@
-
 <?php
 # index.php
+
 require_once('connection.php');
+require('vendor/autoload.php');
 
 if (isset($_GET['controller'])) {
     $controller = $_GET['controller'];
