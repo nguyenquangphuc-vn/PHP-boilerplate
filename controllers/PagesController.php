@@ -2,9 +2,10 @@
 
 namespace app\controllers;
 
-use app\models\Product;
+use app\models\User;
 
-$product = new Product();
+$user = User::findByUsername('bean');
+echo $user->getPassword();
 
 class PagesController extends BaseController
 {
