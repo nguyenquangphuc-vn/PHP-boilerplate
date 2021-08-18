@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,6 +15,8 @@
     <title>PHP MVC Sample</title>
   </head>
   <body>
+      <?php
+      ?>
     <?= @$content?>
   </body>
 </html>

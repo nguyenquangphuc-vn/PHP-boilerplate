@@ -64,7 +64,9 @@ class User
         $db = DB::getInstance();
         $req = $db->query("SELECT * FROM user where username = '" . $username . "'");
         $item = $req->fetchAll();
-        return new User($item[0]['username'], $item[0]['password']);
+        if(count($item )!= 0)
+            return new User($item[0]['username'], $item[0]['password']);
+        return NULL;
     }
 
 

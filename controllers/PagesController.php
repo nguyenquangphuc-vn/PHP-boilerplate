@@ -4,8 +4,6 @@ namespace app\controllers;
 
 use app\models\User;
 
-$user = User::findByUsername('bean');
-echo $user->getPassword();
 
 class PagesController extends BaseController
 {
@@ -18,14 +16,20 @@ class PagesController extends BaseController
     {
         $layoutsController = new LayoutsController();
 
-        $content = $this->render('home');
+        $content = $this->render('Home');
+        require_once ($this->app_path);
+    }
+    public function login(){
+        $layoutsController = new LayoutsController();
+
+        $content = $this->render('Login');
         require_once ($this->app_path);
     }
 
 
     public function error()
     {
-        $content = $this->render('error');
+        $content = $this->render('Error');
         require_once ($this->app_path);
     }
 }

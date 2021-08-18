@@ -1,4 +1,4 @@
-<header class="p-3 bg-primary text-light">
+<header class="p-3 bg-dark ">
   <div class="container">
     <div
       class="
@@ -9,7 +9,7 @@
       "
     >
       <a
-        href="/"
+        href="index.php"
         class="
           d-flex
           align-items-center
@@ -30,7 +30,7 @@
           mb-md-0
         "
       >
-        <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
+        <li><a href="index.php" class="nav-link px-2 text-white">Home</a></li>
         <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
         <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
         <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
@@ -46,9 +46,19 @@
         />
       </form>
 
+
+
       <div class="text-end">
-        <button type="button" class="btn btn-outline-light me-2">Login</button>
-        <button type="button" class="btn btn-warning">Sign-up</button>
+          <?php
+          if(isset($_SESSION['username'])){
+              echo '<a href="" class="text-decoration-none text-light me-3"><i class="fas fa-user-alt"></i> &nbsp;<span>'.$_SESSION['username'].'</span></a>
+                    <a href="/index.php?controller=auth&action=logout" class="text-decoration-none text-light"><i class="fas fa-sign-out-alt"></i>&nbsp;<span>Log out</span></a>';
+          }
+          else{
+              echo '<a href="/index.php?controller=pages&action=login" type="button" class="btn btn-outline-light me-2">Login</a>
+                <button type="button" class="btn btn-warning">Sign-up</button>';
+          }
+          ?>
       </div>
     </div>
   </div>
